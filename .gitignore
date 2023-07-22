@@ -34,3 +34,9 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# SQLite
+*.db
+
+# build files
+dist

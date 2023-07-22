@@ -1,0 +1,28 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "ultra-dmmer backend",
+  "scripts": {
+    "dev": "nodemon src/main.ts",
+    "migrate": "ts-node src/utils/runMigrations.ts",
+    "build": "tsc -p ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.4.4",
+    "nodemon": "^3.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "@fastify/autoload": "^5.7.1",
+    "@fastify/cors": "^8.3.0",
+    "@types/better-sqlite3": "^7.6.4",
+    "better-sqlite3": "^8.5.0",
+    "fastify": "^4.20.0",
+    "kysely": "^0.26.1",
+    "twitter-api-v2": "^1.15.1"
+  }
+}
