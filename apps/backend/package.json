@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "ultra-dmmer backend",
   "scripts": {
-    "dev": "nodemon src/main.ts",
+    "dev": "nodemon -e ts src/main.ts",
     "migrate": "ts-node src/utils/runMigrations.ts",
     "build": "tsc -p ."
   },
@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/better-sqlite3": "^7.6.4",
     "@types/node": "^20.4.4",
     "nodemon": "^3.0.1",
     "ts-node": "^10.9.1",
@@ -19,10 +20,11 @@
   "dependencies": {
     "@fastify/autoload": "^5.7.1",
     "@fastify/cors": "^8.3.0",
-    "@types/better-sqlite3": "^7.6.4",
     "better-sqlite3": "^8.5.0",
+    "dotenv": "^16.3.1",
     "fastify": "^4.20.0",
     "kysely": "^0.26.1",
+    "toad-scheduler": "^3.0.0",
     "twitter-api-v2": "^1.15.1"
   }
 }
